@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 350">
+    <!-- [Previous components remain the same until MongoDB] -->
+    
+    <!-- Data Sources -->
+    <rect x="20" y="50" width="140" height="100" rx="10" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="90" y="85" text-anchor="middle" font-family="Arial" font-size="14" fill="#1B5E20">Data Sources</text>
+    <rect x="40" y="95" width="40" height="40" rx="5" fill="#81C784"/>
+    <text x="60" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="white">HTTP</text>
+    <rect x="100" y="95" width="40" height="40" rx="5" fill="#81C784"/>
+    <text x="120" y="120" text-anchor="middle" font-family="Arial" font-size="12" fill="white">SQL</text>
+
+    <!-- Azure Data Factory -->
+    <rect x="270" y="60" width="120" height="80" rx="15" fill="#0078D4"/>
+    <text x="330" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Azure Data</text>
+    <text x="330" y="125" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Factory</text>
+
+    <!-- ADLS Gen2 (Raw) -->
+    <rect x="270" y="180" width="100" height="60" rx="5" fill="#0078D4"/>
+    <text x="320" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="white">ADLS</text>
+
+    <!-- Databricks -->
+    <rect x="440" y="180" width="120" height="60" rx="30" fill="#E73C3C"/>
+    <text x="500" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Databricks</text>
+
+    <!-- ADLS Gen2 (Transformed) -->
+    <rect x="620" y="180" width="100" height="60" rx="5" fill="#0078D4"/>
+    <text x="670" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="white">ADLS</text>
+
+    <!-- Synapse -->
+    <polygon points="780,160 850,210 780,260" fill="#6741D9"/>
+    <text x="815" y="215" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Synapse</text>
+
+    <!-- Visualization -->
+    <rect x="870" y="185" width="60" height="50" rx="5" fill="#333"/>
+    <text x="900" y="205" text-anchor="middle" font-family="Arial" font-size="10" fill="white">PowerBI</text>
+    <text x="900" y="220" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Tableau</text>
+    <text x="900" y="235" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Fabric</text>
+
+    <!-- MongoDB -->
+    <rect x="450" y="280" width="100" height="50" rx="5" fill="#4CAF50"/>
+    <text x="500" y="310" text-anchor="middle" font-family="Arial" font-size="14" fill="white">MongoDB</text>
+
+    <!-- Arrows and Labels -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+        </marker>
+    </defs>
+
+    <!-- Connections with Adjusted Labels -->
+    <path d="M160,100 L270,100" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="215" y="80" text-anchor="middle" font-family="Arial" font-size="12">Data Ingestion</text>
+
+    <path d="M330,140 L330,180" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="290" y="160" text-anchor="middle" font-family="Arial" font-size="12">Raw Data</text>
+
+    <path d="M370,210 L440,210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="405" y="175" text-anchor="middle" font-family="Arial" font-size="12">Data Transformation</text>
+
+    <path d="M560,210 L620,210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="590" y="175" text-anchor="middle" font-family="Arial" font-size="12">Transformed Data</text>
+
+    <path d="M720,210 L780,210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <path d="M850,210 L870,210" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+    <!-- Vertical arrow with adjusted label position -->
+    <path d="M500,240 L500,280" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="550" y="260" text-anchor="middle" font-family="Arial" font-size="12">Table Enrichment</text>
+</svg>
